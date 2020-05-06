@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
 </head>
 
@@ -183,10 +184,10 @@
                 <h3>Unique design</h3>
             </div>
             <div class="device ">
-                <div class="device__ipad">
+                <div class="device__ipad wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
                     <img src="./img/container5/ipad.png" alt="ipad">
                 </div>
-                <div class="device__iphone">
+                <div class="device__iphone wow fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                     <img src="./img//container5/iphone.png" alt="iphone">
                 </div>
             </div>
@@ -338,8 +339,8 @@
                             </div>
                         </div>
                         <div class="card__text">
-                            <h5>Matthew Dix</h5>
-                            <p>Graphic Design</p>
+                            <h5 class="wow bounceInLeft" data-wow-duration="3s">Matthew Dix</h5>
+                            <p class="wow flipInY" data-wow-duration="5s" data-wow-delay=".5s">Graphic Design</p>
                         </div>
                     </div>
 
@@ -366,8 +367,8 @@
 
                         </div>
                         <div class="card__text">
-                            <h5>Matthew Dix</h5>
-                            <p>Graphic Design</p>
+                            <h5 class="wow bounceIn" data-wow-duration="3s">Matthew Dix</h5>
+                            <p class="wow flipInY" data-wow-duration="5s" data-wow-delay=".5s">Graphic Design</p>
                         </div>
                     </div>
 
@@ -394,8 +395,8 @@
 
                         </div>
                         <div class="card__text">
-                            <h5>Matthew Dix</h5>
-                            <p>Graphic Design</p>
+                            <h5 class="wow bounceInRight" data-wow-duration="3s">Matthew Dix</h5>
+                            <p class="wow flipInY" data-wow-duration="5s" data-wow-delay=".5s">Graphic Design</p>
                         </div>
                     </div>
                 </div>
@@ -690,7 +691,7 @@
                     <div class="followers__block">
                         <p>Follow Us:</p>
                         <div class="links">
-                            <a href="#">
+                            <a href="#" class="wow">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             <a href="#">
@@ -790,9 +791,7 @@
             <hr class="center">
 
             <div class="footer__copy center">
-                <h5>2020 MoGo template by <a href="https://github.com/yur4elas?tab=repositories" target="_blank">Yur4elas</a></h5>
-
-
+                <h5 class="wow pulse" data-wow-duration="3s">2020 MoGo template by <a href="https://github.com/yur4elas?tab=repositories" target="_blank">Yur4elas</a></h5>
             </div>
 
 
@@ -803,6 +802,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJof+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
