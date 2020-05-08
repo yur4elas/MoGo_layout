@@ -93,16 +93,24 @@ h6 {
     background-position-x: center;
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
     max-height: 1000px;
     min-height: 568px;
     font-size: 16px;
+}
+
+.show {
+    display: block;
+}
+
+.container1 .burger {
+    display: none;
 }
 
 .container1 .logo {
     font-size: 30px;
     font-weight: bold;
     padding: 28px 0;
-    color: #fff;
 }
 
 .container1 ul {
@@ -965,13 +973,12 @@ h6 {
 
 .container15 {
     background-color: #f8f8f8;
-    padding-top: 35px;
 }
 
 .container15 .footer__content {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 70px;
+    padding: 70px 0;
     flex-wrap: wrap;
 }
 
@@ -983,44 +990,49 @@ h6 {
     text-decoration: none;
 }
 
-.container15 .mogo h1 {
+.container15 .mogo h2 {
     font-size: 46px;
     font-weight: bold;
     color: #cccccc;
+    margin: 0;
 }
 
 .container15 .mogo .content {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: #999;
+    margin-top: 40px;
 }
 
 
-/* ------------------------------------ */
+/* ------------------------------------------ */
 
-.container15 .mogo .followers span {
+.container15 .mogo .followers {
+    margin: 40px 0 30px;
+}
+
+.container15 .mogo .followers__block1 span {
     font-size: 18px;
     font-weight: bold;
 }
 
-.container15 .mogo .followers {
-    padding-top: 45px;
+.container15 .mogo .followers__block1 {
     font-size: 14px;
     font-weight: 500;
 }
 
 
-/* ---------------------------------------- */
+/* ------- */
 
-.container15 .mogo .followers__block {
+.container15 .mogo .followers__block2 {
     display: flex;
 }
 
-.container15 .mogo .followers__block p {
+.container15 .mogo .followers__block2 p {
     margin: 0;
 }
 
-.container15 .mogo .followers__block .links {
+.container15 .mogo .followers__block2 .links {
     width: 220px;
     display: flex;
     align-items: center;
@@ -1028,19 +1040,19 @@ h6 {
     margin-left: 20px;
 }
 
-.container15 .mogo .followers__block .links a {
+.container15 .mogo .followers__block2 .links a {
     color: #95e1d3;
     transition: .2s linear;
 }
 
-.container15 .mogo .followers__block .links a:nth-child(1):hover,
-.container15 .mogo .followers__block .links a:nth-child(2):hover,
-.container15 .mogo .followers__block .links a:nth-child(3):hover,
-.container15 .mogo .followers__block .links a:nth-child(4):hover,
-.container15 .mogo .followers__block .links a:nth-child(5):hover,
-.container15 .mogo .followers__block .links a:nth-child(6):hover,
-.container15 .mogo .followers__block .links a:nth-child(7):hover,
-.container15 .mogo .followers__block .links a:nth-child(8):hover {
+.container15 .mogo .followers__block2 .links a:nth-child(1):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(2):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(3):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(4):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(5):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(6):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(7):hover,
+.container15 .mogo .followers__block2 .links a:nth-child(8):hover {
     color: #296e62;
 }
 
@@ -1048,10 +1060,16 @@ h6 {
 /* ------------------------------------------------ */
 
 .container15 .intup__email {
-    margin-top: 49px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.container15 .subscribeForm {
+    display: flex;
 }
 
 .container15 .input__text {
+    width: 60%;
     font-size: 15px;
     height: 40px;
     border: 1px solid #e7e7e7;
@@ -1059,6 +1077,7 @@ h6 {
     color: #333;
     font-weight: 500;
     box-shadow: none;
+    padding: 13px;
 }
 
 .container15 .input__text::placeholder {
@@ -1073,7 +1092,8 @@ h6 {
 }
 
 .container15 button {
-    border-radius: 0;
+    width: 40%;
+    border: 0;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
@@ -1094,33 +1114,14 @@ h6 {
 
 .container15 .blogs {
     width: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0 30px;
 }
 
 .container15 .footer__title1 {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    margin: 45px 0;
-}
-
-.container15 .blogs .blog__item h6,
-p {
-    margin: 0;
-}
-
-.container15 .blogs .blog__item h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-.container15 .blogs .blog__item p {
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    line-height: 2;
+    margin: 20px 0 40px;
 }
 
 .container15 .blogs .blog__item {
@@ -1132,29 +1133,44 @@ p {
     margin-left: 20px;
 }
 
+.container15 .blogs .blog__item h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.container15 .blogs .blog__item p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin: 0;
+    line-height: 2;
+}
+
+.container15 .blogs .blog__item:nth-child(2) {
+    margin: 30px 0;
+}
+
 
 /* -------------------------------------------------------- */
 
 .container15 .instagram {
     width: 22%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .container15 .footer__title2 {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 45px;
+    margin: 20px 0 40px;
 }
 
 .container15 .instagram .instagram__grid {
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 2px;
+    margin-bottom: 20px;
 }
 
 .container15 .instagram .instagram__grid img {
@@ -1165,7 +1181,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: 13px;
-    margin-top: 20px;
+    margin: 0;
 }
 
 

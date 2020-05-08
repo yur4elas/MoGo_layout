@@ -7,10 +7,12 @@
     <title>MoGo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -19,7 +21,7 @@
         <section class="container1">
             <header class="center">
                 <span class="logo">Mogo</span>
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <ul>
                         <li><a href="#">about</a></li>
                         <li><a href="#">service</a></li>
@@ -30,12 +32,36 @@
                         <li><i class="fas fa-search"></i></li>
                     </ul>
                 </nav>
+                <span class="burger" id="burger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
             </header>
-            <div class="content center">
-                <h2>Creative Template</h2>
-                <h1>Welcome to MoGo</h1>
-                <a href="#" class="btn">Learn more</a>
+            <div class="owl-carousel">
+                <div class="content center">
+                    <h2>Creative Template</h2>
+                    <h1>Welcome to MoGo</h1>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+                <div class="content center">
+                    <h2>Work</h2>
+
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+                <div class="content center">
+                    <h2>About</h2>
+
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+                <div class="content center">
+                    <h2>Contacts</h2>
+
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+
             </div>
+
         </section>
         <!-- /.container1 -->
         <section class="container2 center">
@@ -208,11 +234,11 @@
             <div class="container-fluid boots__container6 ">
                 <div class="row ">
 
-                    <div class="col-9 col-lg-6 block__accardion">
+                    <div class="col-12	col-sm-12	col-md-10	col-lg-6	col-xl-6 block__accardion">
                         <div class="img__container6"></div>
                     </div>
 
-                    <div class="col-9 col-lg-6 block__accardion">
+                    <div class="col-12	col-sm-12	col-md-10	col-lg-6	col-xl-6 block__accardion">
                         <div class="accordion" id="accordionExample">
 
                             <div class="card accardion__card">
@@ -677,80 +703,94 @@
         <section class="container15">
             <footer class="footer__content center">
                 <div class="mogo">
+                    <div class="title__footer__mogo">
+                        <a href="#">
+                            <h2>MoGo</h2>
+                        </a>
+                    </div>
 
-                    <a href="#">
-                        <h1>MoGo</h1>
-                    </a>
+
                     <p class="content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
 
-                    <p class="followers"> <span>15k</span> followers</p>
-                    <hr>
 
-                    <div class="followers__block">
-                        <p>Follow Us:</p>
-                        <div class="links">
-                            <a href="#" class="wow">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i></a>
-                            <a href="#">
-                                <i class="fab fa-pinterest-p"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
+                    <div class="followers">
+                        <p class="followers__block1"> <span>15k</span> followers</p>
+                        <hr>
+
+                        <div class="followers__block2">
+                            <p>Follow Us:</p>
+                            <div class="links">
+                                <a href="#" class="wow">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i></a>
+                                <a href="#">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-tumblr"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="intup__email">
-                        <form class="form-inline" role="form">
-                            <div class="form-group">
-                                <input type="email" class="form-control input__text" id="email" placeholder="Your Email...">
-                            </div>
-                            <button type="submit" class="btn btn-default">Subscribe</button>
+
+                        <form class="subscribeForm" id="subscribeForm">
+                            <input type="email" name="email" id="email" class="input__text" placeholder="Your Email...">
+
+                            <button type="submit" class=" button">Subscribe</button>
                         </form>
+
+
                     </div>
 
 
                 </div>
 
                 <div class="blogs">
+
                     <h5 class="footer__title1">blogs</h5>
-                    <div class="blog__item">
-                        <img src="./img/footer/blogs/item1.png" alt="img1" class="image__blog ">
-                        <div class="content ">
-                            <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                            <p>Jan 9, 2016</p>
+
+                    <div class="box__blog">
+                        <div class="blog__item">
+                            <img src="./img/footer/blogs/item1.png" alt="img1" class="image__blog ">
+                            <div class="content ">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                                <p>Jan 9, 2016</p>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <img src="./img/footer/blogs/item2.png" alt="img2" class="image__blog ">
+                            <div class="content ">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                                <p>Jan 9, 2016</p>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <img src="./img/footer/blogs/item3.png" alt="img3" class="image__blog ">
+                            <div class="content ">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                                <p>Jan 9, 2016</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="blog__item">
-                        <img src="./img/footer/blogs/item2.png" alt="img2" class="image__blog ">
-                        <div class="content ">
-                            <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                            <p>Jan 9, 2016</p>
-                        </div>
-                    </div>
-                    <div class="blog__item">
-                        <img src="./img/footer/blogs/item3.png" alt="img3" class="image__blog ">
-                        <div class="content ">
-                            <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                            <p>Jan 9, 2016</p>
-                        </div>
-                    </div>
+
                 </div>
 
                 <div class="instagram">
@@ -805,6 +845,15 @@
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1
+            });
+        });
     </script>
 
 </body>
